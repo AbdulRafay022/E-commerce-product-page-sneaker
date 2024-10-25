@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sneaker</title>
+  </head>
+  <body class="relative">
+    <div
+      class="flex flex-col bg-white absolute top-0 z-10 w-1/2 gap-5 h-screen slider hidden p-5"
+    >
+      <img src="images/close.svg" class="h-10 w-10 close" alt="" />
+      <a href="" class="text-black font-bold text-xl"> Collections </a>
+      <a href="" class="text-black font-bold text-xl"> Men </a>
+      <a href="" class="text-black font-bold text-xl"> Women </a>
+      <a href="" class="text-black font-bold text-xl"> About </a>
+      <a href="" class="text-black font-bold text-xl"> Contact </a>
+    </div>
+    <nav class="flex items-center md:mx-16 border-b relative md:p-0 p-4">
+      <div
+        class="flex flex-col p-4 z-50 bg-white rounded-lg top-20 md:top-16 w-full right-0 md:w-1/4 shadow-2xl absolute cart-container hidden"
+      >
+        <h1 class="font-semibold pb-6 border-b-2">Cart</h1>
+        <h1 class="text-dark-grayish py-16 text-center empty-cart">
+          Your cart is empty
+        </h1>
+        <div class="flex items-center gap-3 py-5 hidden cart-item">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            class="h-14 w-14 rounded-md"
+            alt=""
+          />
+          <div class="flex flex-col">
+            <h1 class="text-sm text-dark-grayish">
+              Fall Limited Edition Sneakers
+            </h1>
+            <div class="text-dark-grayish">
+              $125.00 x <span class="items-no">3</span>
+              <span class="text-very-dark font-bold total">$375</span>
+            </div>
+          </div>
+          <img
+            src="images/icon-delete.svg"
+            class="h-5 w-4 ml-auto delete-btn cursor-pointer"
+            alt=""
+          />
+        </div>
+        <button
+          class="bg-primary-orane font-bold py-2 rounded-md hidden checkout-btn cursor-pointer"
+        >
+          Checkout
+        </button>
+      </div>
+      <div class="flex md:gap-8 items-center">
+        <img
+          src="images/menu.svg"
+          class="h-10 md:hidden block mr-5 menu"
+          alt=""
+        />
+        <img
+          src="images/logo.svg"
+          class="md:pb-6 md:pt-4 border-b-2 border-opacity-0 border-primary-orane mr-4"
+          alt=""
+        />
+        <a
+          href=""
+          class="text-grayish-primary border-b-2 md:block hidden border-opacity-0 hover:border-opacity-100 border-primary-orane pb-6 pt-4"
+        >
+          Collections
+        </a>
+        <a
+          href=""
+          class="text-grayish-primary border-b-2 md:block hidden border-opacity-0 border-primary-orane hover:border-opacity-100 pb-6 pt-4"
+        >
+          Men
+        </a>
+        <a
+          href=""
+          class="text-grayish-primary border-b-2 md:block hidden border-opacity-0 border-primary-orane hover:border-opacity-100 pb-6 pt-4"
+        >
+          Women
+        </a>
+        <a
+          href=""
+          class="text-grayish-primary border-b-2 md:block hidden border-opacity-0 border-primary-orane hover:border-opacity-100 pb-6 pt-4"
+        >
+          About
+        </a>
+        <a
+          href=""
+          class="text-grayish-primary border-b-2 md:block hidden border-opacity-0 border-primary-orane hover:border-opacity-100 pb-6 pt-4"
+        >
+          Contact
+        </a>
+      </div>
+      <div
+        class="flex items-center h-10 gap-8 pt-4 border-b-2 border-opacity-0 border-primary-orane ml-auto"
+      >
+        <div class="relative cursor-pointer cart">
+          <img src="images/icon-cart.svg" class="h-6" alt="" />
+          <span
+            class="px-2 text-xs text-white font-semibold bg-primary-orane rounded-full absolute -top-2 -right-3 cart-num hidden"
+            >3</span
+          >
+        </div>
+        <img
+          src="images/image-avatar.png"
+          class="h-10 border-2 rounded-full hover:border-primary-orane cursor-pointer"
+          alt=""
+        />
+      </div>
+    </nav>
+    <main
+      class="flex md:flex-row flex-col max-w-lg md:max-w-4xl mx-auto items-center justify-between md:mt-10"
+    >
+      <div class="flex flex-col md:gap-6">
+        <div class="flex max-w-sm relative md:overflow-visible overflow-hidden">
+          <img
+            class="rounded-md md:hidden slide w-full absolute md:relative"
+            src="images/image-product-1.jpg"
+            class=""
+            alt=""
+          />
+
+          <img
+            class="rounded-md md:hidden slide w-full md:relative"
+            src="images/image-product-2.jpg"
+            alt=""
+          />
+
+          <img
+            class="rounded-md md:hidden slide absolute w-full md:relative"
+            src="images/image-product-3.jpg"
+            alt=""
+          />
+
+          <img
+            class="rounded-md md:hidden slide w-full absolute md:relative"
+            src="images/image-product-4.jpg"
+            alt=""
+          />
+
+          <img
+            class="rounded-md hero-img-1 cursor-pointer hero w-full"
+            src="images/image-product-1.jpg"
+            class=""
+            alt=""
+          />
+
+          <img
+            class="rounded-md md:hidden cursor-pointer hero-img-2 hero w-full"
+            src="images/image-product-2.jpg"
+            alt=""
+          />
+
+          <img
+            class="rounded-md md:hidden cursor-pointer hero-img-3 hero w-full"
+            src="images/image-product-3.jpg"
+            alt=""
+          />
+
+          <img
+            class="rounded-md md:hidden cursor-pointer hero-img-4 hero w-full"
+            src="images/image-product-4.jpg"
+            alt=""
+          />
+
+          <img
+            src="images/icon-next.svg"
+            class="h-10 w-10 p-3 bg-white rounded-full md:hidden block z-20 -translate-x-1/2 right-0 top-1/2 absolute btn-right"
+            alt=""
+          />
+          <img
+            src="images/icon-previous.svg"
+            class="h-10 w-10 p-3 bg-white rounded-full md:hidden block z-20 translate-x-1/2 top-1/2 absolute btn-left"
+            alt=""
+          />
+        </div>
+        <div class="md:flex justify-between hidden">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            class="w-16 h-16 rounded-md tumbnail-1 cursor-pointer active"
+            alt=""
+          />
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            class="w-16 h-16 rounded-md tumbnail-2 cursor-pointer"
+            alt=""
+          />
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            class="w-16 h-16 rounded-md tumbnail-3 cursor-pointer"
+            alt=""
+          />
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            class="w-16 h-16 rounded-md tumbnail-4 cursor-pointer"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 md:mt-0 mt-8 p-4">
+        <h1 class="text-dark-grayish uppercase tracking-wider font-semibold">
+          Sneaker Company
+        </h1>
+        <h1 class="text-very-dark font-bold text-4xl max-w-sm">
+          Fall Limited Edition Sneakers
+        </h1>
+        <p class="text-dark-grayish text-sm max-w-sm">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="flex md:flex-col justify-between w-full">
+          <div class="flex items-baseline gap-3">
+            <p class="text-very-dark font-bold text-2xl">
+              $ <span class="price">125.00</span>
+            </p>
+            <p class="bg-very-dark py-1 text-white rounded-md px-3">50%</p>
+          </div>
+          <s class="text-dark-grayish font-semibold"> $250.00 </s>
+        </div>
+        <div class="flex flex-col md:flex-row gap-4">
+          <div
+            class="flex md:py-2 px-4 justify-between items-center py-3 bg-light-grayish rounded-md gap-8"
+          >
+            <img
+              src="images/icon-minus.svg"
+              alt=""
+              class="h-1 w-3 cursor-pointer minus"
+            />
+            <span class="font-bold text-very-dark number">0</span>
+            <img
+              src="images/icon-plus.svg"
+              class="h-3 cursor-pointer plus"
+              alt=""
+            />
+          </div>
+          <button
+            class="font-semibold rounded-md bg-primary-orane py-3 md:py-2 px-8 gap-4 flex justify-center items-center add-to-cart"
+          >
+            <img src="images/icon-cart.svg" alt="" />
+            <span> Add to cart </span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Light Box -->
+    <div
+      class="absolute top-0 h-screen w-screen backdrop-blur-md bg-black bg-opacity-25 flex justify-center items-center light-box"
+    >
+      <img
+        src="images/icon-close.svg"
+        class="absolute right-1/3 cursor-pointer top-20 close-btn z-50 h-7 w-7"
+        alt=""
+      />
+      <div class="relative max-w-sm flex rounded-lg overflow-x-hidden">
+        <img
+          src="images/image-product-1.jpg"
+          class="slidees absolute"
+          alt="image-product-1"
+        />
+        <img
+          src="images/image-product-2.jpg"
+          class="slidees absolute"
+          alt="image-product-2"
+        />
+        <img
+          src="images/image-product-3.jpg"
+          class="slidees"
+          alt="image-product-3"
+        />
+        <img
+          src="images/image-product-4.jpg"
+          class="slidees absolute"
+          alt="image-product-4"
+        />
+        <img
+          src="images/icon-next.svg"
+          class="h-10 w-10 p-3 bg-white rounded-full block z-50 -translate-x-1/2 right-0 top-1/2 absolute btn-right-slide cursor-pointer"
+          alt=""
+        />
+        <img
+          src="images/icon-previous.svg"
+          class="h-10 w-10 p-3 bg-white rounded-full block z-50 translate-x-1/2 top-1/2 absolute btn-left-slide cursor-pointer"
+          alt=""
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
